@@ -24,7 +24,7 @@ namespace Inegration_Testing
             IWebElement element = driver.FindElement(By.XPath("/html/body/div[2]/div[2]/div/div/section/div/div[2]/div/div/div/div/div/div[1]/form/div[1]/input"));
             element.SendKeys("170042088");
             IWebElement password = driver.FindElement(By.XPath("/html/body/div[2]/div[2]/div/div/section/div/div[2]/div/div/div/div/div/div[1]/form/div[2]/input"));
-            password.SendKeys("Abc.1234");
+            password.SendKeys("*****"); //password cannot be shared
             driver.FindElement(By.Id("Log in")).Click();
             String at = driver.Title;
 
